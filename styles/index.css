@@ -44,7 +44,7 @@
 .hero_container {
   background-image: url("../img/banner-bg-image@2x.png");
   width: 100%;
-  height: 60vh;
+  height: 450px;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
