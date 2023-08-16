@@ -1,0 +1,356 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* header styling  */
+.header {
+  padding: 1.5rem 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.header .logo {
+  color: #111827;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  font-family: "Domine", serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header .logo span {
+  color: #8b4448;
+  font-size: 16px;
+  text-align: right;
+}
+
+.header ul {
+  display: flex;
+  gap: 2rem;
+}
+.header ul li a {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Hero Container  */
+.hero_container {
+  background-image: url("../img/banner-bg-image@2x.png");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.hero_container .box {
+  background-color: rgba(61, 60, 42, 0.7);
+  padding: 1rem;
+  width: max-content;
+}
+.hero_container .box h2 {
+  color: #aad5d3;
+  font-family: "Domine", serif;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 5rem;
+}
+.hero_container .box p {
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 2rem 0;
+  max-width: 70%;
+}
+.hero_container .box button {
+  background: #aad5d3;
+  color: #111827;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  padding: 0.2rem 0.4rem;
+  transition: 0.3s;
+}
+.hero_container .box button:hover {
+  background: #111827;
+  color: #ffffff;
+}
+
+/* Blogs Container  */
+.blogs_Container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.blog_heading {
+  color: #111827;
+  font-family: "Domine", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  text-transform: uppercase;
+  padding-left: 0.5rem;
+}
+.blogs {
+  background: #fff;
+}
+.blog {
+  border: 1px solid #9ca3af;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+.blogs .blog_child1 {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  gap: 1rem;
+}
+.blogs .blog_child1 .child1_content {
+  flex: 60%;
+  box-sizing: border-box;
+}
+.blog_child1 .child1_content h4 {
+  color: #8b4448;
+  font-family: "Domine", serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31.5px;
+  padding-bottom: 1rem;
+}
+.blog_child1 .child1_content p {
+  color: #111827;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.blog_child1 .blog_image {
+  flex: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog_child1 .blog_image img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+.blogs .blog_child2 {
+  border-radius: 0px 0px 4px 4px;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: end;
+  padding: 1rem 4.2rem;
+  gap: 3rem;
+}
+
+.blogs .blog_child2 .editor {
+  color: #111827;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+}
+.blogs .blog_child2 .text {
+  color: #111827;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+}
+.blogs .blog_child2 .stars {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+.blogs .blog_child2 .stars img {
+  width: 20px;
+}
+
+/* Footer styling  */
+.footer {
+  background: #8b4448;
+  text-align: center;
+  padding: 3rem;
+}
+.footer h1 {
+  color: #fff;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: "Domine", serif;
+  padding-bottom: 1.5rem;
+}
+.footer .footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer a {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: 0.3s;
+  padding: 1rem;
+}
+
+.footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* @media Query For responsive design  */
+@media screen and (max-width: 968px) {
+  .hero_container .box h2 {
+    font-size: 70px;
+  }
+  .hero_container .box p {
+    font-size: 15px;
+  }
+  .blog_child1 .blog_image img {
+    height: 550px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* header in mobile screen  */
+
+  .header .logo {
+    font-size: 20px;
+  }
+  .header .nav .logo a span {
+    font-size: 13px;
+  }
+
+  /* ========================= hero container for responsive  */
+  .hero_container {
+    background-position: center;
+  }
+
+  .hero_container .box {
+    max-width: 70%;
+    padding: 1rem;
+  }
+  .hero_container .box h2 {
+    font-size: 40px;
+    line-height: 4rem;
+  }
+  .hero_container .box p {
+    font-size: 15px;
+    padding: 1rem 0;
+    max-width: 100%;
+  }
+
+  /* ================================= Blogs Container  */
+  .blog_heading {
+    font-size: 30px;
+  }
+  .blogs {
+    border-radius: 4px;
+    border: 1px solid #9ca3af;
+    background: #fff;
+  }
+  .blogs .blog_child1 {
+    display: block;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .blogs .blog_child1 .child1_content {
+    padding: 0px;
+  }
+
+  .blog_child1 .blog_image {
+    margin-top: 2rem;
+  }
+  .blog_child1 .blog_image img {
+    max-height: 300px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .header {
+    gap: 2rem;
+  }
+  .header .logo {
+    font-size: 15px;
+  }
+  .header .logo span {
+    font-size: 10px;
+  }
+  .header ul li a {
+    font-size: 15px;
+  }
+  /* ======= Blog  */
+  .blog_heading {
+    font-size: 25px;
+  }
+  .blog_child1 .child1_content h4 {
+    font-size: 20px;
+    padding: 1rem 0;
+  }
+  .blog_child1 .child1_content p {
+    font-size: 15px;
+  }
+  .blog_child1 .blog_image img {
+    max-height: 200px;
+  }
+
+  .blogs .blog_child2 {
+    padding: 1.2rem;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .blogs .blog_child2 .editor {
+    font-size: 13px;
+  }
+  .blogs .blog_child2 .text {
+    font-size: 13px;
+  }
+  .blogs .blog_child2 .stars img {
+    width: 15px;
+  }
+  /* footer  */
+  .footer {
+    padding: 2rem 1rem;
+  }
+  .footer h2 {
+    font-size: 25px;
+  }
+  .footer a {
+    font-size: 15px;
+    padding: 0.7rem;
+  }
+
+  .footer p {
+    font-size: 15px;
+  }
+}

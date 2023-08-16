@@ -1,0 +1,313 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* header styling  */
+.header {
+  padding: 1.5rem 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.header .logo {
+  color: #111827;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  font-family: "Domine", serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header .logo span {
+  color: #8b4448;
+  font-size: 16px;
+  text-align: right;
+}
+
+.header ul {
+  display: flex;
+  gap: 2rem;
+}
+.header ul li a {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* =================================== >Tour Banner  */
+
+.tour_header {
+  background-image: url("../img/banner-image@2x.png");
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tour_header h1 {
+  color: #aad5d3;
+  font-family: "Domine", serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+  text-transform: uppercase;
+  padding-left: 1rem;
+}
+
+.tour_header p {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 25%;
+  padding-left: 1rem;
+}
+
+/* =============================== Offers Container  */
+
+.offers_container h1 {
+  color: #111827;
+  font-family: "Domine", serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  margin: 2rem 0;
+}
+.offers_container .offers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.offers_container .offers .offer {
+  text-align: center;
+}
+
+.offer .offer_image img {
+  width: 100%;
+  height: 120px;
+}
+
+.offer .offer_content .offer_heading {
+  color: #8b4448;
+  text-align: center;
+  font-family: "Domine", serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31.5px;
+  padding: 1rem 0;
+}
+.offer .offer_content p {
+  color: #111827;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* ============================ Tours Container */
+.tours_container{
+  padding: 1rem 0;
+}
+.tours_container h1 {
+  color: #111827;
+  font-family: "Domine", serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  margin-bottom: 1rem;
+}
+.tours_container .tours {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.tours .tour_box {
+  padding: 1rem;
+  background: #f3f4f6;
+}
+
+.tours .tour_image {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.tours .tour_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tour_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.tour_content .tour_heading {
+  color: #8b4448;
+  font-family: "Domine", serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31.5px;
+}
+.tour_content p {
+  color: #111827;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.tour_content span {
+  color: #111827;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+}
+.tour_content a {
+  color: #111827;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  transition: 0.3s;
+}
+
+/* Footer styling  */
+.footer {
+  background: #8b4448;
+  text-align: center;
+  padding: 3rem;
+}
+.footer h1 {
+  color: #fff;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: "Domine", serif;
+  padding-bottom: 1.5rem;
+}
+.footer .footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer a {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: 0.3s;
+  padding: 1rem;
+}
+
+.footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Media Query For Responsive Design  */
+@media screen and (max-width: 968px) {
+  .offers_container .offers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tour_header p {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .logo {
+    font-size: 20px;
+  }
+  .header .nav .logo a span {
+    font-size: 13px;
+  }
+
+  .tours_container .tours {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .header {
+    gap: 2rem;
+  }
+  .header .logo {
+    font-size: 15px;
+  }
+  .header .logo span {
+    font-size: 10px;
+  }
+  .header ul li a {
+    font-size: 15px;
+  }
+  .tour_header {
+    height: 300px;
+    background-position: center;
+  }
+  .tour_header h1 {
+    font-size: 40px;
+  }
+  .tour_header p {
+    max-width: 90%;
+    font-size: 15px;
+  }
+
+  /* Offers Conatiner  */
+  .offers_container h1 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+  .offers_container .offers {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* tours container  */
+  .tours_container h1 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+  .tours .tour_box {
+    padding: 0.7rem;
+  }
+  .tours .tour_image {
+    height: 200px;
+  }
+  /* footer  */
+  .footer {
+    padding: 2rem 1rem;
+  }
+  .footer h2 {
+    font-size: 25px;
+  }
+  .footer a {
+    font-size: 15px;
+    padding: 0.7rem;
+  }
+
+  .footer p {
+    font-size: 15px;
+  }
+}
