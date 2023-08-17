@@ -45,7 +45,7 @@
 .checkout_banner {
   background-image: url("../img/bg@2x.png");
   width: 100%;
-  height: 350px;
+  height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -90,8 +90,8 @@
 }
 
 .side-bar img {
-  width: 100%;
-  height: 250px;
+  width: 228px;
+  height: 228px;
 }
 .side-bar p {
   color: #8b4448;
@@ -183,6 +183,7 @@ input {
   padding: 3rem;
 }
 .footer h1 {
+  text-transform: uppercase;
   color: #fff;
   font-size: 31px;
   font-style: normal;
@@ -233,6 +234,9 @@ input {
   }
   .header .nav .logo a span {
     font-size: 13px;
+  }
+  .side-bar img {
+    width: 100%;
   }
 
   /* form  */

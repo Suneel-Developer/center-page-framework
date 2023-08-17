@@ -128,18 +128,17 @@
 .blog_child1 .child1_content h4 {
   color: #8b4448;
   font-family: "Domine", serif;
-  font-size: 25px;
+  font-size: 21px;
   font-style: normal;
   font-weight: 700;
-  line-height: 31.5px;
-  padding-bottom: 1rem;
+  padding-bottom: .7rem;
 }
 .blog_child1 .child1_content p {
   color: #111827;
-  font-size: 17px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 24px;
 }
 
 .blog_child1 .blog_image {
@@ -152,8 +151,8 @@
 }
 
 .blog_child1 .blog_image img {
-  max-width: 100%;
-  max-height: 300px;
+  width: 350px;
+  height: 188px;
   object-fit: cover;
 }
 .blogs .blog_child2 {
@@ -185,7 +184,8 @@
   align-items: center;
 }
 .blogs .blog_child2 .stars img {
-  width: 20px;
+  width: 18.311px;
+  height: 18.172px;
 }
 
 /* Footer styling  */
@@ -195,6 +195,7 @@
   padding: 3rem;
 }
 .footer h1 {
+  text-transform: uppercase;
   color: #fff;
   font-size: 31px;
   font-style: normal;
@@ -236,8 +237,12 @@
   .hero_container .box p {
     font-size: 15px;
   }
-  .blog_child1 .blog_image img {
-    height: 550px;
+  .blog_child1 .child1_content h4 {
+    font-size: 19px;
+    padding: .7rem 0;
+  }
+  .blog_child1 .child1_content p {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 768px) {
