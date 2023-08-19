@@ -7,19 +7,20 @@
     <title>Checkout</title>
 
     <!-- Custom Css Link  -->
-    <link rel="stylesheet" href="../styles/checkout.css" />
-    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <a href="../index.html" class="logo">
+        <a href="index.html" class="logo">
           <h1>Globetrotting Ben</h1>
           <span>A Life of Travel</span>
         </a>
         <nav>
           <ul>
-            <li><a href="./tours.html">Tours</a></li>
+            <li><a href="tours.html">Tours</a></li>
             <li><a href="#">Checkout</a></li>
           </ul>
         </nav>
@@ -33,10 +34,10 @@
 
       <!-- /* ==================================== > Form Contaainer  */ -->
 
-      <section class="contact-form">
-        <article class="side-bar">
+      <div class="contact-form">
+        <section class="side-bar">
           <h2 class="heading">My Order</h2>
-          <img src="../img/image@2x.png" alt="Order Image" />
+          <img src="img/wonders-of-vietnam.webp" alt="Wonders of Vietnam">
           <p><strong>Wonders of Vietnam</strong></p>
           <span>February 1-8, 2024</span>
           <table>
@@ -53,9 +54,9 @@
               </tr>
             </tbody>
           </table>
-        </article>
+        </section>
 
-        <article class="form_container">
+        <div class="form_container">
           <h2 class="heading">Payment</h2>
 
           <p class="form-title"><strong>Shipping Address</strong></p>
@@ -87,7 +88,7 @@
                 <label for="telephone"
                   >Telephone <span>*(Required)</span></label
                 >
-                <input type="text" id="telephone" name="telephone" />
+                <input type="number" id="telephone" name="telephone" />
               </div>
             </div>
 
@@ -105,34 +106,32 @@
 
               <div class="code">
                 <label for="code">Security Code</label>
-                <input type="text" id="code" name="code" />
+                <input type="password" id="code" name="code" />
               </div>
             </div>
 
             <input class="btn" type="submit" value="Purchase" />
           </form>
-        </article>
-      </section>
+        </div>
+      </div>
 
       <!-- ================================= > Footer  -->
       <footer class="footer">
         <h1>Globetrotting Ben</h1>
-        <article class="footer_links">
-          <aside>
-            <a href="#">About</a>
-            <a href="#">Travel Resources</a>
-            <a href="#">Blog</a>
-          </aside>
-          <aside>
-            <a href="./Tours.html">Tours</a>
-            <a href="#">Contact</a>
-          </aside>
-        </article>
+        <ul>
+          <li><a>About</a></li>
+          <li><a>Travel Resources</a></li>
+          <li><a>Blog</a></li>
+        </ul>
+        <ul>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a>Contact</a></li>
+        </ul>
         <hr />
-        <aside>
+        <section>
           <p>Copyright 2023</p>
           <p>For educational purposes only</p>
-        </aside>
+        </section>
       </footer>
     </div>
   </body>

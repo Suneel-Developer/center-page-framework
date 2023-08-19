@@ -7,8 +7,9 @@
     <title>Home</title>
 
     <!-- custom css links  -->
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- ================================= > Header  -->
@@ -20,8 +21,8 @@
         </a>
         <nav>
           <ul>
-            <li><a href="./pages/tours.html">Tours</a></li>
-            <li><a href="./pages/checkout.html">Checkout</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
           </ul>
         </nav>
       </header>
@@ -29,8 +30,8 @@
       <!-- ================================= > hero_container -->
 
       <main>
-        <section class="hero_container">
-          <aside class="box">
+        <div class="hero_container">
+          <section class="box">
             <h2>
               Welcome! <br />
               I'm Ben.
@@ -40,16 +41,15 @@
               experiences.
             </p>
             <button>Check out my tours</button>
-          </aside>
-        </section>
+          </section>
+        </div>
 
-        <section class="blogs_Container">
+        <div class="blogs_Container">
           <h3 class="blog_heading">Latest Blog Posts</h3>
 
           <div class="blogs">
-
-            <article class="blog">
-              <aside class="blog_child1">
+            <div class="blog">
+              <section class="blog_child1">
                 <div class="child1_content">
                   <h4>Best Things to Do on Your Trip to California</h4>
                   <p>
@@ -62,24 +62,25 @@
                   </p>
                 </div>
                 <div class="blog_image">
-                  <img src="./img/golden-gate-bridge@2x.png" alt="Blog" />
+                  <img src="img/golden-gate-bridge.webp" alt="Best Things to Do on Your Trip to California">
                 </div>
-              </aside>
-              <aside class="blog_child2">
+              </section>
+
+              <section class="blog_child2">
                 <span class="text">By Ben</span>
                 <span class="text">May 23rd, 2023</span>
                 <div class="stars">
                   <p class="text">Rated:</p>
-                  <img src="./img/star.svg" alt="Rating Star" />
-                  <img src="./img/star.svg" alt="Rating Star" />
+                  <img src="./img/star.svg" alt="Rating Star">
+                  <img src="./img/star.svg" alt="Rating Star">
                 </div>
-              </aside>
-            </article>
+              </section>
+            </div>
 
-            <article class="blog">
-              <aside class="blog_child1">
+            <div class="blog">
+              <section class="blog_child1">
                 <div class="blog_image">
-                  <img src="./img/scotland@2x.png" alt="Blog" />
+                  <img src="img/scotland.webp" alt="The Digital Nomad Lifestyle">
                 </div>
                 <div class="child1_content">
                   <h4>The Digital Nomad Lifestyle</h4>
@@ -93,21 +94,21 @@
                     willingness...
                   </p>
                 </div>
-              </aside>
-              <aside class="blog_child2">
+              </section>
+              <section class="blog_child2">
                 <span class="text">By Ben</span>
                 <span class="text">May 10th, 2023</span>
                 <div class="stars">
                   <p class="text">Rated:</p>
-                  <img src="./img/star.svg" alt="Rating Star" />
-                  <img src="./img/star.svg" alt="Rating Star" />
-                  <img src="./img/star.svg" alt="Rating Star" />
+                  <img src="./img/star.svg" alt="Rating Star">
+                  <img src="./img/star.svg" alt="Rating Star">
+                  <img src="./img/star.svg" alt="Rating Star">
                 </div>
-              </aside>
-            </article>
+              </section>
+            </div>
 
-            <article class="blog">
-              <aside class="blog_child1">
+            <div class="blog">
+              <section class="blog_child1">
                 <div class="child1_content">
                   <h4>4 Stunning National Parks to Explore in Australia</h4>
                   <p>
@@ -120,46 +121,41 @@
                   </p>
                 </div>
                 <div class="blog_image">
-                  <img src="./img/australia-outback@2x.png" alt="Blog" />
+                  <img src="img/australia-outback.webp" alt="4 Stunning National Parks to Explore in Australia">
                 </div>
-              </aside>
-              <aside class="blog_child2">
+              </section>
+              <section class="blog_child2">
                 <span class="text">By Ben</span>
                 <span class="text">January 27th, 2023</span>
                 <div class="stars">
                   <p class="text">Rated:</p>
-                  <img src="./img/star.svg" alt="Rating Star" />
-                  <img src="./img/star.svg" alt="Rating Star" />
-                  <img src="./img/star.svg" alt="Rating Star" />
+                  <img src="./img/star.svg" alt="Rating Star">
+                  <img src="./img/star.svg" alt="Rating Star">
+                  <img src="./img/star.svg" alt="Rating Star">
                 </div>
-              </aside>
-            </article>
-            
+              </section>
+            </div>
           </div>
-        </section>
+        </div>
       </main>
 
       <!-- ================================= > Footer  -->
       <footer class="footer">
         <h1>Globetrotting Ben</h1>
-        <article class="footer_links">
-
-          <aside>
-            <a href="#">About</a>
-            <a href="#">Travel Resources</a>
-            <a href="#">Blog</a>
-          </aside>
-          <aside>
-            <a href="./pages/Tours.html">Tours</a>
-            <a href="#">Contact</a>
-          </aside>
-
-        </article>
+        <ul>
+          <li><a>About</a></li>
+          <li><a>Travel Resources</a></li>
+          <li><a>Blog</a></li>
+        </ul>
+        <ul>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a>Contact</a></li>
+        </ul>
         <hr />
-        <article>
+        <section>
           <p>Copyright 2023</p>
           <p>For educational purposes only</p>
-        </article>
+        </section>
       </footer>
     </div>
   </body>
