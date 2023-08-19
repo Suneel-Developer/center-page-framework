@@ -1,6 +1,6 @@
 /* Hero Container  */
 .hero_container {
-  background-image: url("../img/banner-bg-image@2x.png");
+  background-image: url("../img/main-banner.webp");
   width: 100%;
   height: 450px;
   background-size: cover;
@@ -240,20 +240,5 @@
   }
   .blogs .blog_child2 .stars img {
     width: 15px;
-  }
-  /* footer  */
-  .footer {
-    padding: 2rem 1rem;
-  }
-  .footer h2 {
-    font-size: 25px;
-  }
-  .footer a {
-    font-size: 15px;
-    padding: 0.7rem;
-  }
-
-  .footer p {
-    font-size: 15px;
   }
 }

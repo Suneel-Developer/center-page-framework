@@ -38,6 +38,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: .3s;
+}
+.header ul li a:hover{
+  color: #8b4448;
 }
 
 /* Footer styling  */
@@ -61,6 +65,7 @@
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 .footer li a {
   color: #fff;
@@ -70,6 +75,11 @@
   line-height: normal;
   transition: 0.3s;
   padding: 1rem;
+  cursor: pointer;
+  transition: .3s;
+}
+.footer li a:hover{
+  color: #111827;
 }
 
 .footer p {
